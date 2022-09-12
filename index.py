@@ -1,6 +1,8 @@
 from math import trunc
 from flask import Flask,jsonify,redirect,url_for,render_template,request
 
+from baseDeDatos import datos
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -19,9 +21,13 @@ def expotronicaHome():
 def expotronicaProyecto1():
     return render_template('expotronica/expotronicaProyecto1.html')
 
-@app.route('/expotronica/team/alejo',methods=['GET','POST'])
-def expotronicaTeamAlejo():
-    return render_template('expotronica/expotronicaTeamAlejo.html')
+@app.route('/expotronica/team/<nombre>',methods=['GET','POST'])
+def expotronicaTeam(nombre):
+    for i in datos:
+        if nombre == i['ruta']:
+            return render_template(f'expotronica/expotronicaTeam.html')
+    
+    return jsonify('hola')
 
 
 if __name__ == '__main__':
