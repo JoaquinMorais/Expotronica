@@ -252,8 +252,8 @@ body{
 
 @media(max-width:400px){
     
-    .proyecto-main{
-        padding: 0px 10px;  
+    .proyecto-menu{
+        padding: 5px 0px;  
     }
 }
 

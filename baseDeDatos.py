@@ -15,8 +15,6 @@ datos = [
         'parrafo4_titulo':'Relleno',
         'parrafo4_texto':'Relleno',
         'parrafo5_titulo':'Relleno',
-        'parrafo5_texto':'Relleno',
-
-        
+        'parrafo5_texto':'Relleno', 
     },
 ]
