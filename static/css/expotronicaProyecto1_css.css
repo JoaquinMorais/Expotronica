@@ -109,6 +109,8 @@ body{
     width: 60%;
     margin-left: 20%;
     border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0px 5px 23px -2px rgba(0,0,0,0.92); 
+    box-shadow: 0px 5px 23px -2px rgba(0,0,0,0.92);
    
 }
 
@@ -119,7 +121,6 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
     border-top: 1px solid rgb(212, 212, 212);
     background-color: rgb(252, 252, 252);
-    
 }
 .desarrolladores-menu{
     padding: 10px;
@@ -219,6 +220,21 @@ body{
     .proyecto-2{
         grid-template-columns: 1fr 0px;
     }
+    .desarrolladores{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media(max-width:900px){
+    .desarrolladores{
+        width: 96%;
+        margin-left: 2%;
+    }
+}
+@media(max-width:700px){
+    .desarrolladores-menu img{
+        width: 100px;
+    }
 }
 @media(max-width:600px){
     .proyecto-main{
@@ -227,6 +243,9 @@ body{
     .footer-links{
         
         padding: 15px 0;
+    }
+    .desarrolladores-main{
+        grid-template-columns: 1fr;
     }
 }
 

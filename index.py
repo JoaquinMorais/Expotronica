@@ -25,7 +25,7 @@ def expotronicaProyecto1():
 def expotronicaTeam(nombre):
     for i in datos:
         if nombre == i['ruta']:
-            return render_template(f'expotronica/expotronicaTeam.html')
+            return render_template(f'expotronica/expotronicaTeam.html',datos = i)
     
     return jsonify('hola')
 
