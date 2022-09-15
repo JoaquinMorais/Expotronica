@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expotronica Equipo Villada</title>
+    <link rel="icon" type="image/jpg" href="{{ url_for('static',filename='src/expotronica/itsv.jpg ') }}">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaTeams_css.css') }}">
+    
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- SCROOL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <div class="navbar">   
+        <ul>
+            <li><a href="/expotronica/home">Home</a></li>
+            <li><a href="/expotronica/participantes">Participantes</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Proyectos</a>
+              <div class="dropdown-content">
+                <a href="/expotronica/proyecto/1">Villada Assistant</a>
+                <a href="/expotronica/proyecto/2">Open-Cv</a>
+                <a href="/expotronica/proyecto/3">Bot De Whatsapp</a>
+              </div>
+            </li>
+          </ul>
+    </div>
+    
+    <div class="container">
+        <div class="containerUpper">
+            <img src="https://expotronica.com.ar/wp-content/uploads/2021/12/logo_expotronica.png" alt="">
+
+            <h1>
+                <u>Participantes:</u>
+            </h1>
+
+            <img src="https://www.evaristoriera.com/sites/default/files/vacio_0.png" alt="">
+        </div>
+
+        <div class="containerAbout">
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[1]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[1]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[1]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[2]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[2]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[2]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[3]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[3]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[3]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[4]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[4]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[4]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[5]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[5]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[5]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[6]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[6]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[6]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[7]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[7]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[7]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[8]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[8]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[8]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[9]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[9]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[9]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[10]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[10]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[10]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            <div class="containerPersona">
+                <a href="/expotronica/team/{{datos[11]['ruta']}}">
+                    <img src="{{ url_for('static',filename=datos[11]['direccionFoto']) }}" alt="">
+                    <div></div>
+                    <p>
+                        {{ datos[11]['nombre'] }}
+                    </p>
+                </a>
+            </div>
+            
+            
+            
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-links">
+        
+        <section class="social">
+            <p id="C6">Puedes Encontrarnos En</p>
+            <div class="links">
+                <a href="https://es-la.facebook.com/">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=es-la">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://support.google.com/mail/answer/8494?co=GENIE.Platform%3DDesktop&hl=es/">
+                    <i class="fa fa-fw fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+        
+    </div>
+    
+    <footer class="footer">
+        <h3>Copyright © Expotronica Villada 2022</h3>
+    </footer>
+</body>
+</html>
+

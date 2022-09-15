@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expotronica Equipo Villada</title>
-    <link rel="icon" type="image/jpg" href="{{ url_for('static',filename='src/expotronica/itsv.jpg ') }}">
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaProyecto1_css.css') }}">
     
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaProyecto2-3_css.css') }}">
+    <link rel="icon" type="image/jpg" href="{{ url_for('static',filename='src/expotronica/itsv.jpg ') }}">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
@@ -45,14 +45,18 @@
         
         <div class="proyecto-main proyecto-1">
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-1.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto3-1.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             <div class="proyecto-menu">
                 <div class="titulo">
-                    <h1>Villada Assistant</h1>
+                    <h1>Bot De Whatsapp</h1>
                 </div>
-                <p>Es un proyecto el cual busca la comunicación hablada entre el ser humano y la computadora en cuestión; permitiendo dar órdenes sencillas a través de la voz y el ordenador poder realizarlas de la manera más correcta posible. Se lleva a cabo a través de un nombre designado anteriormente para empezar a realizar una acción con una de las tantas palabras clave para saber qué instrucción captar, de tal manera que el uso de palabras claves para que se ejecuten de manera apropiada las órdenes dirigidas es necesario para su correcto funcionamiento. </p>
+                <p>Es un proyecto en el que se genera un bot dentro de whatshap web 
+                    el bot responderá automáticamente a cada mensaje que te llegue a
+                    tu numero de teléfono  instantáneamente, cada mensaje conlleva
+                    una respuesta, ademas tiene varias funciones como poder jugar al 
+                    preguntados pedirle que ponga música simplemente con un comando. </p>
             </div>
             
             
@@ -63,17 +67,17 @@
 
         <div class="proyecto-main proyecto-2">
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto3-2.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             <div></div>
             <div class="proyecto-menu">
                 <div class="titulo">
                     <h1>¿Como Funciona?</h1>
                 </div>
-                <p>Este proyecto fue realizado con Python 3.8, utilizando las librerias "SpeachRecognition" y "Pyttsx3", permitiendonos interactuar con la entrada y salida del audio respectivamente, luego para poder realizar los procesos se utilizo otra libreria llamada "Pyautogui", para lograr tener un prototipo funcional lo mas parecido a Siri o El Asistente De Google</p>
+                <p>El bot funciona usando Python y una libreria llamada pyautogui, con esta libreria dependiendo el color de una cierta posicion detecta si llego un mensaje, ahi copia el mensaje y lo guarda para poder buscar la mejor respuesta y poder enviarsela al usuario.</p>
             </div>
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto3-2.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             
@@ -85,25 +89,20 @@
             <div class="titulo"><h2>Desarrolladores</h2></div>
             <div class="desarrolladores-main border-gris">
                 <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/blazquez">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamBlazquez.png') }}" alt = "Foto" class="foto">
-                    </a>
-                    
-                </div>
-                <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/fernandez">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamFernandez.png') }}" alt = "Foto" class="foto">
-                    </a>
-                    
-                </div>
-                <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/andino">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamAndino.png') }}" alt = "Foto" class="foto">
-                    </a>
-                </div>
-                <div class="desarrolladores-menu">
                     <a href="/expotronica/team/morais">
                         <img src="{{ url_for('static',filename='src/expotronica/teamMorais.png') }}" alt = "Foto" class="foto">
+                    </a>
+                    
+                </div>
+                <div class="desarrolladores-menu">
+                    <a href="/expotronica/team/marquez">
+                        <img src="{{ url_for('static',filename='src/expotronica/teamMarquez.png') }}" alt = "Foto" class="foto">
+                    </a>
+                    
+                </div>
+                <div class="desarrolladores-menu">
+                    <a href="/expotronica/team/genaro">
+                        <img src="{{ url_for('static',filename='src/expotronica/teamGenaro.png') }}" alt = "Foto" class="foto">
                     </a>
                 </div>
             </div>

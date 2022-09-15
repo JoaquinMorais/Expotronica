@@ -21,13 +21,27 @@ def expotronicaHome():
 def expotronicaProyecto1():
     return render_template('expotronica/expotronicaProyecto1.html')
 
+@app.route('/expotronica/proyecto/2',methods=['GET','POST'])
+def expotronicaProyecto2():
+    return render_template('expotronica/expotronicaProyecto2.html')
+
+@app.route('/expotronica/proyecto/3',methods=['GET','POST'])
+def expotronicaProyecto3():
+    return render_template('expotronica/expotronicaProyecto3.html')
+
+
 @app.route('/expotronica/team/<nombre>',methods=['GET','POST'])
 def expotronicaTeam(nombre):
     for i in datos:
         if nombre == i['ruta']:
             return render_template(f'expotronica/expotronicaTeam.html',datos = i)
     
-    return jsonify('hola')
+    return redirect(url_for('expotronicaTeams'))
+
+
+@app.route('/expotronica/participantes')
+def expotronicaTeams():
+    return render_template('expotronica/expotronicaTeams.html',datos=datos)
 
 
 if __name__ == '__main__':

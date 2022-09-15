@@ -8,7 +8,7 @@
     
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaHome_css.css') }}">
-    
+    <link rel="icon" type="image/jpg" href="{{ url_for('static',filename='src/expotronica/itsv.jpg ') }}">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
@@ -16,13 +16,19 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <div class="navbar">
-        
-        <a href="/">Home</a>
-        <a href="/">Pepe</a>
-        <a href="/">Pepe</a>
-        <a href="/">Pepe</a>
-        
+    <div class="navbar">   
+        <ul>
+            <li><a href="/expotronica/home">Home</a></li>
+            <li><a href="/expotronica/participantes">Participantes</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Proyectos</a>
+              <div class="dropdown-content">
+                <a href="/expotronica/proyecto/1">Villada Assistant</a>
+                <a href="/expotronica/proyecto/2">Open-Cv</a>
+                <a href="/expotronica/proyecto/3">Bot De Whatsapp</a>
+              </div>
+            </li>
+          </ul>
     </div>
       
     <div class="main">
@@ -34,27 +40,26 @@
     
         <img class="logo" src="{{ url_for('static',filename='src/expotronica/logo_expotronica.png') }}" alt="pepe">
     <div class="container">
-
         <!-- Proyectos -->
         <div class="titulo">
-            <h1 id=C1><ins>Proyecto 1</ins></h1>
+            <h1 id=C1><ins>Villada Assistant</ins></h1>
         </div>
         
         <div class="proyecto-main proyecto-1">
 
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto-1.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-0.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             <div class="proyecto-menu">
-                <p>relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno </p>
+                <p>Es un proyecto el cual busca la comunicación  hablada entre el ser humano y la computadora en cuestión; permitiendo dar órdenes sencillas a través de la voz y el ordenador poder realizarlas de la manera más correcta posible.</p>
             </div>
             
             
         </div>
         <div class="boton">
-            <a href="/test/start">
-                <p>Ver Proyecto 1</p>
+            <a href="/expotronica/proyecto/1">
+                <p>Ver Proyecto</p>
             </a>   
         </div>
 
@@ -65,7 +70,7 @@
         </div>
         <div class="proyecto-main proyecto-2">
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto2-0.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             <div></div>
             <div class="proyecto-menu">
@@ -73,13 +78,13 @@
                 </p>
             </div>
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto2-0.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
         </div>
         
         <div class="boton">
-            <a href="/test/start">
+            <a href="/expotronica/proyecto/2">
                 <p>Ver Proyecto 2</p>
             </a>   
         </div>
@@ -94,17 +99,18 @@
         <div class="proyecto-main proyecto-1">
 
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto-1.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto3-0.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             <div class="proyecto-menu">
-                <p>relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno relleno </p>
+                <p>Es un proyecto en el que se genera un bot dentro de whatshap web el bot responderá automáticamente a cada mensaje que te llegue a tu numero de teléfono instantáneamente, cada mensaje conlleva una respuesta, ademas tiene varias funciones como poder jugar al preguntados pedirle que ponga música simplemente con un comando.
+                </p>
             </div>
             
             
         </div>
         <div class="boton">
-            <a href="/test/start">
+            <a href="/expotronica/proyecto/3">
                 <p>Ver Proyecto 3</p>
             </a>   
         </div>

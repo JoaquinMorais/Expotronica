@@ -16,34 +16,72 @@ body{
 
 /* The navigation bar */
 .navbar {
-    overflow: hidden;
-    background-color: rgba(24,53,76,1);
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+
+    background-color: rgba(24, 53, 76, 1);
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
     height: auto;
     color: #fff;
-    
-  }
-  
-  /* Links inside the navbar */
-.navbar a {
-    
+
+}
+
+/* Links inside the navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
     float: left;
-    display: block;
-    color: #f2f2f2;
+}
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition: all 0.3s ease 0s;
-
 }
-  
-  /* Change background on mouse-over */
-.navbar a:hover {
-    background: #ddd;
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
     color: black;
-    
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
@@ -118,7 +156,7 @@ body{
     display: grid;
     align-items: center;
     padding: 0px 50px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     border-top: 1px solid rgb(212, 212, 212);
     background-color: rgb(252, 252, 252);
 }
@@ -230,6 +268,9 @@ body{
         width: 96%;
         margin-left: 2%;
     }
+    .desarrolladores-main{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media(max-width:700px){
     .desarrolladores-menu img{
@@ -244,9 +285,7 @@ body{
         
         padding: 15px 0;
     }
-    .desarrolladores-main{
-        grid-template-columns: 1fr;
-    }
+    
 }
 
 @media(max-width:500px){
@@ -266,6 +305,9 @@ body{
         padding: 30px;
         background-color: rgb(25, 118, 210);
     }
+    .desarrolladores-main{
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -276,7 +318,7 @@ body{
     }
 }
 
-@media(max-width:304px){
+@media(max-width:333px){
     .main {
         margin-top: 40px; /* Add a top margin to avoid content overlay */
         margin-bottom: 10px;

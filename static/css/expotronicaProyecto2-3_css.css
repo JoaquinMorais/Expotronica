@@ -86,30 +86,31 @@ li.dropdown {
 
 
 
-/* Main content */
+  /* Main content */
 .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+.container{
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
     margin-top: 30px;
-    /* Add a top margin to avoid content overlay */
+    margin-bottom: 30px;
+    
 }
 
-
-.container {
-    padding: 30px;
-    width: 80%;
-    margin-left: 10%;
-    background-color: white;
-
+.gris{
+    background-color: rgb(246,246,246);
 }
 
-
-.logo {
+.logo{
     width: 100%;
     height: auto;
     padding: 50px;
     background-color: rgb(25, 118, 210);
 }
-
-
 
 .titulo{
     margin: 20px;
@@ -125,11 +126,10 @@ li.dropdown {
     align-items: center;
     padding: 0px 50px;  
 }
-
 .proyecto-menu{
     padding: 10px;
-    font-size: 20px;
 }
+
 .proyecto-main img{
     width: 100%;
     height: auto;
@@ -143,10 +143,31 @@ li.dropdown {
     grid-template-columns: 0px 0px 1fr 1fr;
 }
 
-.border{
-    border-bottom: 1px solid black;
-    margin-top: 15px;
-    margin-bottom: 30px;
+.desarrolladores{
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid rgb(212, 212, 212);
+    box-shadow: 0px 5px 23px -2px rgba(0,0,0,0.92); 
+    box-shadow: 0px 5px 23px -2px rgba(0,0,0,0.92);
+   
+}
+
+.desarrolladores-main{
+    display: grid;
+    align-items: center;
+    padding: 0px 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-top: 1px solid rgb(212, 212, 212);
+    background-color: rgb(252, 252, 252);
+}
+.desarrolladores-menu{
+    padding: 10px;
+}
+
+.desarrolladores-menu img{
+    width: 125px;
+    height: auto;
+    border-radius: 50%;
 }
 
 
@@ -237,35 +258,32 @@ li.dropdown {
     .proyecto-2{
         grid-template-columns: 1fr 0px;
     }
+    .desarrolladores{
+        width: 80%;
+        margin-left: 10%;
+    }
 }
 @media(max-width:900px){
-    .container{
-        padding: 15px;
-        width: 90%;
-        margin-left: 5%;
-        
+    .desarrolladores{
+        width: 96%;
+        margin-left: 2%;
     }
 }
 @media(max-width:700px){
-    .container{
-        padding: 5px;
-        width: 96%;
-        margin-left: 2%;
-        
+    .desarrolladores-menu img{
+        width: 100px;
     }
 }
 @media(max-width:600px){
-    .container{
-        padding: 2px;
-        width: 100%;
-        margin-left: 0px;
-    }
     .proyecto-main{
         padding: 0px 30px;  
     }
     .footer-links{
         
         padding: 15px 0;
+    }
+    .desarrolladores-main{
+        grid-template-columns: 1fr;
     }
 }
 
@@ -286,26 +304,16 @@ li.dropdown {
         padding: 30px;
         background-color: rgb(25, 118, 210);
     }
-    
 }
 
 
 @media(max-width:400px){
     
     .proyecto-menu{
-        padding: 5px 0px;
-          
+        padding: 5px 0px;  
     }
-    .boton a{
-        font-size: 15px;
-    }
-    .boton a:hover{
-        font-size: 18px;
-    }
-
-    
-
 }
+
 @media(max-width:333px){
     .main {
         margin-top: 40px; /* Add a top margin to avoid content overlay */

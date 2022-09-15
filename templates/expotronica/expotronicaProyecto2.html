@@ -7,7 +7,7 @@
     <title>Expotronica Equipo Villada</title>
     <link rel="icon" type="image/jpg" href="{{ url_for('static',filename='src/expotronica/itsv.jpg ') }}">
     <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaProyecto1_css.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/expotronicaProyecto2-3_css.css') }}">
     
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -45,14 +45,16 @@
         
         <div class="proyecto-main proyecto-1">
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-1.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto2-1.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             <div class="proyecto-menu">
                 <div class="titulo">
-                    <h1>Villada Assistant</h1>
+                    <h1>Open-Cv</h1>
                 </div>
-                <p>Es un proyecto el cual busca la comunicación hablada entre el ser humano y la computadora en cuestión; permitiendo dar órdenes sencillas a través de la voz y el ordenador poder realizarlas de la manera más correcta posible. Se lleva a cabo a través de un nombre designado anteriormente para empezar a realizar una acción con una de las tantas palabras clave para saber qué instrucción captar, de tal manera que el uso de palabras claves para que se ejecuten de manera apropiada las órdenes dirigidas es necesario para su correcto funcionamiento. </p>
+                <p>Los rostros de las personas son reconocidos cuando se les dibuja un cuadrado alrededir de los mismos indicando que el programa ha detectado un rostro.
+                    Podemos observar  que los rostros no simepre son reconocidos. Esto puede debederse a cambios de iluminacion o simplemente alguien tiene tapada una parte de la cara.
+                </p>
             </div>
             
             
@@ -63,17 +65,19 @@
 
         <div class="proyecto-main proyecto-2">
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto2-2.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             <div></div>
             <div class="proyecto-menu">
                 <div class="titulo">
                     <h1>¿Como Funciona?</h1>
                 </div>
-                <p>Este proyecto fue realizado con Python 3.8, utilizando las librerias "SpeachRecognition" y "Pyttsx3", permitiendonos interactuar con la entrada y salida del audio respectivamente, luego para poder realizar los procesos se utilizo otra libreria llamada "Pyautogui", para lograr tener un prototipo funcional lo mas parecido a Siri o El Asistente De Google</p>
+                <p>utiliza unas "plantillas" llamadas HAAR CASCADES para reconocer lobjetos.
+                    Una haar cascade es un algoritmo que usa "formas" como se ve en la imagen de al lado tratando de "representar" la realidad de una manera generica y simplificada para reconocer objetos, en este caso un rostro.
+                </p>
             </div>
             <div class="proyecto-menu">
-                <img src="{{ url_for('static',filename='src/expotronica/proyecto1-2.png') }}" alt = "Foto Proyecto 1" class="foto">
+                <img src="{{ url_for('static',filename='src/expotronica/proyecto2-2.png') }}" alt = "Foto Proyecto 1" class="foto">
             </div>
             
             
@@ -85,25 +89,20 @@
             <div class="titulo"><h2>Desarrolladores</h2></div>
             <div class="desarrolladores-main border-gris">
                 <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/blazquez">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamBlazquez.png') }}" alt = "Foto" class="foto">
+                    <a href="/expotronica/team/marchisone">
+                        <img src="{{ url_for('static',filename='src/expotronica/teamMarchisone.png') }}" alt = "Foto" class="foto">
                     </a>
                     
                 </div>
                 <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/fernandez">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamFernandez.png') }}" alt = "Foto" class="foto">
+                    <a href="/expotronica/team/galaverna">
+                        <img src="{{ url_for('static',filename='src/expotronica/teamGalaverna.png') }}" alt = "Foto" class="foto">
                     </a>
                     
                 </div>
                 <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/andino">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamAndino.png') }}" alt = "Foto" class="foto">
-                    </a>
-                </div>
-                <div class="desarrolladores-menu">
-                    <a href="/expotronica/team/morais">
-                        <img src="{{ url_for('static',filename='src/expotronica/teamMorais.png') }}" alt = "Foto" class="foto">
+                    <a href="/expotronica/team/cimatti">
+                        <img src="{{ url_for('static',filename='src/expotronica/teamCimatti.png') }}" alt = "Foto" class="foto">
                     </a>
                 </div>
             </div>
